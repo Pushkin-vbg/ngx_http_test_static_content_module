@@ -1,0 +1,13 @@
+Тестовый модуль nginx для вывода статического контента
+
+Сборка:
+
+./auto/configure --add-module=/путьдомодуля/ngx_http_test_static_conten
+
+Использование:
+
+location /test
+                {
+			test_static_content;                        
+			root /home/student/nginx-root;
+                }
